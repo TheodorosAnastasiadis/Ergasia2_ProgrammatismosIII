@@ -23,3 +23,5 @@ clean:
 run: $(TARGET)
 	./$(TARGET)
 
+#run make -f eshop.make on terminal
+#./eshop
