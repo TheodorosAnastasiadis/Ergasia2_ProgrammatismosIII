@@ -93,9 +93,11 @@ int main() {
                     snprintf(buffer, sizeof(buffer), "Order for Product %d (Price: %.2f) successful!", product_id, catalog[product_id].price); // Δημιουργία μηνύματος επιβεβαίωσης παραγγελίας με την τιμή
                     successful_orders++;  // Αυξάνουμε τον αριθμό των επιτυχημένων παραγγελιών
                     total_revenue += catalog[product_id].price;  // Προσθέτουμε την τιμή του προϊόντος στον συνολικό τζίρο
+			sleep(1);
                 } else {
                     snprintf(buffer, sizeof(buffer), "Product %d out of stock.", product_id);  // Δημιουργία μηνύματος αποτυχίας λόγω έλλειψης προϊόντος
                     failed_orders++;  // Αυξάνουμε τον αριθμό των αποτυχημένων παραγγελιών
+			sleep(1);
                 }
                 write(from_server[j][1], buffer, sizeof(buffer));  // Αποστολή του μηνύματος προς τον πελάτη μέσω του αντίστοιχου pipe.
             }
