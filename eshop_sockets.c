@@ -1,3 +1,4 @@
+//Αυτο ειναι το προγραμμα με τα sockets Οχι το διορθωμενο προηγουμενο
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
