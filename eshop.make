@@ -3,9 +3,9 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -O2
 
-TARGET = eshop
+TARGET = eshop_Erg3
 
-SRCS = eshop.c
+SRCS = eshop_Erg3.c
 
 OBJS = $(SRCS:.c=.o)
 
