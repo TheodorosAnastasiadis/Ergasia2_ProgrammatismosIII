@@ -24,4 +24,4 @@ run: $(TARGET)
 	./$(TARGET)
 
 #run make -f eshop.make on terminal
-#./eshop
+#./eshop_Erg3
